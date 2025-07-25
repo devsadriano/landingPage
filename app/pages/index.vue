@@ -21,6 +21,16 @@
         <!-- Depoimentos Section -->
         <DepoimentosSection />
 
+        <!-- Checkout Section -->
+        <CheckoutSection />
+
+        <FaqSection/>
+
+        <!-- Footer Section -->
+        <FooterSection />
+
+        <!-- WhatsApp Button -->
+        <WhatsAppButton />
 
     </div>
 </template>
@@ -34,6 +44,11 @@ import MetodoComponentizacaoSection from '~/components/sections/MetodoComponenti
 import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
 import ConteudoCursoSection from '~/components/sections/ConteudoCursoSection.vue'
 import DepoimentosSection from '~/components/sections/DepoimentosSection.vue'
+import CheckoutSection from '~/components/sections/CheckoutSection.vue'
+import FaqSection from '~/components/sections/FaqSection.vue'
+import FooterSection from '~/components/sections/FooterSection.vue'
+import WhatsAppButton from '~/components/ui/WhatsAppButton.vue'
+
 
 // Configurações da página
 useHead({
