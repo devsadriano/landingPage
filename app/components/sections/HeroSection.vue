@@ -41,7 +41,7 @@
 
                 <!-- Action Button -->
                 <div>
-                    <ActionButton texto="Começar Agora" />
+                    <ActionButton texto="Começar Agora" :scrollToCheckout="true" />
                 </div>
             </div>
         </div>

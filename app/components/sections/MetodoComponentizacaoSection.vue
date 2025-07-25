@@ -73,7 +73,7 @@
                 
                 <!-- Action Button -->
                 <div class="mt-16 text-center">
-                    <ActionButton texto="Começar Agora" />
+                    <ActionButton texto="Começar Agora" :scrollToCheckout="true" />
                 </div>
             </div>
         </div>
