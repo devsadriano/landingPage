@@ -1,238 +1,190 @@
 <template>
-  <div class="bg-neutral-900/90 border border-red-500/30 rounded-lg overflow-hidden shadow-lg">
-    <!-- File Header -->
-    <div class="bg-neutral-800/80 px-4 py-2 border-b border-neutral-700/50 flex items-center justify-between">
+  <div
+    class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl border border-red-500/30 shadow-2xl overflow-hidden">
+    <!-- Header do Editor -->
+    <div class="flex items-center justify-between px-4 py-3 bg-neutral-800/80 border-b border-neutral-700/50">
+      <!-- Controles da janela -->
       <div class="flex items-center space-x-2">
-        <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
-        </svg>
-        <span class="text-neutral-300 text-sm font-mono">App.vue</span>
+        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-secondary-500 rounded-full"></div>
       </div>
-      <div class="flex items-center space-x-2">
-        <div class="flex items-center space-x-1">
-          <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-          <span class="text-red-400 text-xs">12 erros</span>
-        </div>
-        <div class="flex items-center space-x-1">
-          <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-          <span class="text-yellow-400 text-xs">8 avisos</span>
-        </div>
+      <!-- Título do arquivo -->
+      <div class="text-neutral-300 text-sm font-mono">messy-app.js</div>
+      <!-- Status de erro -->
+      <div class="flex items-center space-x-1 px-2 py-1 bg-red-500/20 border border-red-400/30 rounded-md">
+        <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+        <span class="text-red-300 text-xs">12 Erros</span>
       </div>
     </div>
 
-    <!-- Code Content -->
-    <div class="p-4 font-mono text-sm max-h-96 overflow-y-auto">
-      <!-- Line 1 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">1</span>
-        <div class="flex-1">
-          <span class="text-blue-400">&lt;template&gt;</span>
+    <!-- Área do código -->
+    <div class="p-4 font-mono text-xs leading-relaxed max-h-96 overflow-y-auto">
+      <div class="space-y-1">
+        <!-- Linha 1-5 -->
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">1</span>
+          <span class="text-secondary-400">// Código gerado pela IA sem estrutura</span>
         </div>
-      </div>
-
-      <!-- Line 2 - Error -->
-      <div class="flex items-start space-x-3 mb-1 bg-red-500/10 border-l-2 border-red-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">2</span>
-        <div class="flex-1 relative">
-          <span class="text-neutral-300">&nbsp;&nbsp;&lt;</span>
-          <span class="text-red-400 underline decoration-wavy">div class="contaner"</span>
-          <span class="text-neutral-300">&gt;</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">2</span>
+          <span class="text-red-300">function everything() {</span>
         </div>
-      </div>
-
-      <!-- Line 3 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">3</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
-          <span class="text-green-400">h1</span>
-          <span class="text-neutral-300">&gt;{{ title }}&lt;/</span>
-          <span class="text-green-400">h1</span>
-          <span class="text-neutral-300">&gt;</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">3</span>
+          <span class="text-neutral-300 ml-4">var db = require('database')</span>
         </div>
-      </div>
-
-      <!-- Line 4 - Warning -->
-      <div class="flex items-start space-x-3 mb-1 bg-yellow-500/10 border-l-2 border-yellow-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">4</span>
-        <div class="flex-1 relative">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
-          <span class="text-yellow-400 underline decoration-wavy">button onclick="handleClick()"</span>
-          <span class="text-neutral-300">&gt;Clique&lt;/button&gt;</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">4</span>
+          <span class="text-neutral-300 ml-4">var user = prompt('Digite seu nome')</span>
+          <span class="text-red-400 ml-2">⚠️</span>
         </div>
-      </div>
-
-      <!-- Line 5 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">5</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;&lt;/</span>
-          <span class="text-green-400">div</span>
-          <span class="text-neutral-300">&gt;</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">5</span>
+          <span class="text-yellow-300 ml-4">db.connect('localhost:3306', 'root', '123456')</span>
+          <span class="text-red-400 ml-2">⚠️</span>
         </div>
-      </div>
 
-      <!-- Line 6 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">6</span>
-        <div class="flex-1">
-          <span class="text-blue-400">&lt;/template&gt;</span>
+        <!-- Linha 6-15 -->
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">6</span>
+          <span class="text-neutral-300 ml-4">if (user == null) {</span>
         </div>
-      </div>
-
-      <!-- Line 7 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">7</span>
-        <div class="flex-1"></div>
-      </div>
-
-      <!-- Line 8 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">8</span>
-        <div class="flex-1">
-          <span class="text-blue-400">&lt;script&gt;</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">7</span>
+          <span class="text-neutral-300 ml-8">alert('Erro!')</span>
         </div>
-      </div>
-
-      <!-- Line 9 - Error -->
-      <div class="flex items-start space-x-3 mb-1 bg-red-500/10 border-l-2 border-red-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">9</span>
-        <div class="flex-1 relative">
-          <span class="text-purple-400">export</span>
-          <span class="text-neutral-300"> </span>
-          <span class="text-purple-400">default</span>
-          <span class="text-neutral-300"> {</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">8</span>
+          <span class="text-neutral-300 ml-8">return false</span>
         </div>
-      </div>
-
-      <!-- Line 10 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">10</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;</span>
-          <span class="text-blue-400">data</span>
-          <span class="text-neutral-300">() {</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">9</span>
+          <span class="text-neutral-300 ml-4">}</span>
         </div>
-      </div>
-
-      <!-- Line 11 - Error -->
-      <div class="flex items-start space-x-3 mb-1 bg-red-500/10 border-l-2 border-red-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">11</span>
-        <div class="flex-1 relative">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="text-purple-400">return</span>
-          <span class="text-neutral-300"> {</span>
-          <span class="text-red-400 underline decoration-wavy">title: "Meu App"</span>
-          <span class="text-neutral-300"> }</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">10</span>
+          <span class="text-yellow-300 ml-4">document.getElementById('app').innerHTML = '</span>
         </div>
-      </div>
-
-      <!-- Line 12 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">12</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;},</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">11</span>
+          <span class="text-yellow-300 ml-8">&lt;div&gt;&lt;h1&gt;' + user + '&lt;/h1&gt;</span>
+          <span class="text-red-400 ml-2">⚠️</span>
         </div>
-      </div>
-
-      <!-- Line 13 - Warning -->
-      <div class="flex items-start space-x-3 mb-1 bg-yellow-500/10 border-l-2 border-yellow-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">13</span>
-        <div class="flex-1 relative">
-          <span class="text-neutral-300">&nbsp;&nbsp;</span>
-          <span class="text-blue-400">methods</span>
-          <span class="text-neutral-300">: {</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">12</span>
+          <span class="text-yellow-300 ml-8">&lt;button onclick="deleteAll()"&gt;Delete&lt;/button&gt;</span>
+          <span class="text-red-400 ml-2">⚠️</span>
         </div>
-      </div>
-
-      <!-- Line 14 -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">14</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="text-yellow-400">handleClick</span>
-          <span class="text-neutral-300">() {</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">13</span>
+          <span class="text-yellow-300 ml-8">&lt;/div&gt;'</span>
         </div>
-      </div>
-
-      <!-- Line 15 - Error -->
-      <div class="flex items-start space-x-3 mb-1 bg-red-500/10 border-l-2 border-red-500">
-        <span class="text-neutral-500 text-xs w-6 text-right">15</span>
-        <div class="flex-1 relative">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="text-red-400 underline decoration-wavy">console.log("clicked")</span>
-          <div class="absolute -right-2 top-0">
-            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">14</span>
+          <span class="text-neutral-300 ml-4">eval(user + '.init()')</span>
+          <span class="text-red-400 ml-2">⚠️</span>
         </div>
-      </div>
-
-      <!-- More lines... -->
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">16</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">15</span>
+          <span class="text-neutral-300 ml-4">setTimeout(function() {</span>
         </div>
-      </div>
 
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">17</span>
-        <div class="flex-1">
-          <span class="text-neutral-300">&nbsp;&nbsp;}</span>
+        <!-- Linha 16-25 -->
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">16</span>
+          <span class="text-neutral-300 ml-8">fetch('/api/users', {</span>
         </div>
-      </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">17</span>
+          <span class="text-neutral-300 ml-12">method: 'POST',</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">18</span>
+          <span class="text-neutral-300 ml-12">body: user,</span>
+          <span class="text-red-400 ml-2">⚠️</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">19</span>
+          <span class="text-neutral-300 ml-12">headers: {}</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">20</span>
+          <span class="text-neutral-300 ml-8">}).then(data => {</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">21</span>
+          <span class="text-neutral-300 ml-12">localStorage.setItem('token', data)</span>
+          <span class="text-red-400 ml-2">⚠️</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">22</span>
+          <span class="text-neutral-300 ml-12">window.location = '/dashboard'</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">23</span>
+          <span class="text-neutral-300 ml-8">})</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">24</span>
+          <span class="text-neutral-300 ml-4">}, 0)</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">25</span>
+          <span class="text-red-300">}</span>
+        </div>
 
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">18</span>
-        <div class="flex-1">
+        <!-- Linha 26-35 -->
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">26</span>
+          <span class="text-neutral-300">function deleteAll() {</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">27</span>
+          <span class="text-yellow-300 ml-4">db.query('DROP TABLE users')</span>
+          <span class="text-red-400 ml-2">⚠️</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">28</span>
+          <span class="text-yellow-300 ml-4">db.query('DELETE FROM *')</span>
+          <span class="text-red-400 ml-2">⚠️</span>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">29</span>
           <span class="text-neutral-300">}</span>
         </div>
-      </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-neutral-500 select-none w-6">30</span>
+          <span class="text-neutral-300">everything()</span>
+        </div>
 
-      <div class="flex items-start space-x-3 mb-1">
-        <span class="text-neutral-500 text-xs w-6 text-right">19</span>
-        <div class="flex-1">
-          <span class="text-blue-400">&lt;/script&gt;</span>
+        <!-- Mais linhas vazias -->
+        <div class="flex items-start space-x-3" v-for="line in 5" :key="line + 30">
+          <span class="text-neutral-500 select-none w-6">{{ line + 30 }}</span>
+          <span class="text-neutral-700">~</span>
         </div>
       </div>
     </div>
 
-    <!-- Error Panel -->
-    <div class="bg-red-500/10 border-t border-red-500/30 p-3">
-      <div class="space-y-1 text-xs">
-        <div class="flex items-center space-x-2">
-          <div class="w-1 h-1 bg-red-500 rounded-full"></div>
-          <span class="text-red-400">Erro: Classe CSS 'contaner' não encontrada</span>
+    <!-- Footer com erros -->
+    <div class="flex items-center justify-between px-4 py-2 bg-neutral-900/80 border-t border-neutral-700/50 text-xs">
+      <div class="flex items-center space-x-4">
+        <span class="text-neutral-400">JavaScript</span>
+        <span class="text-red-400">12 Problemas</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-1">
+          <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+          <span class="text-red-400">Vulnerável</span>
         </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-1 h-1 bg-red-500 rounded-full"></div>
-          <span class="text-red-400">Erro: Sintaxe Vue.js incorreta</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-1 h-1 bg-yellow-500 rounded-full"></div>
-          <span class="text-yellow-400">Aviso: Uso de console.log em produção</span>
-        </div>
+        <span class="text-neutral-500">Ln 30, Col 15</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+// Componente de código mal escrito (estático)
 defineOptions({
   name: 'CodeFileWithErrors'
 })

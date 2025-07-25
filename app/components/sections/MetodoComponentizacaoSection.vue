@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Results Section -->
-                <div class="mt-48 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div class="mt-48 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <!-- Left Column - Why it Works -->
                     <div class="space-y-6">
                         <div class="flex items-center space-x-3">

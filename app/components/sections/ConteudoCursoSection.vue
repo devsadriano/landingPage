@@ -28,7 +28,8 @@
         <!-- Course Modules -->
         <div class="space-y-4">
           <CourseModuleCard numero="1" titulo="Fundamentos Teóricos"
-            descricao="Base sólida para entender desenvolvimento web e empreendedorismo" status="liberado" :modulos="[
+            descricao="Base sólida para entender desenvolvimento web e empreendedorismo" status="liberado" :delay="200"
+            :modulos="[
               {
                 titulo: 'Introdução ao Desenvolvimento Web',
                 descricao: 'Frameworks, servidores, anatomia de aplicações e arquitetura'
@@ -44,7 +45,8 @@
             ]" />
 
           <CourseModuleCard numero="2" titulo="Componentização Extrema"
-            descricao="Domine a arte de criar componentes reutilizáveis e escaláveis" status="liberado" :modulos="[
+            descricao="Domine a arte de criar componentes reutilizáveis e escaláveis" status="liberado" :delay="400"
+            :modulos="[
               {
                 titulo: 'Setup Inicial',
                 descricao: 'Instalação do Git, Node.js, editor de código e ferramentas essenciais'
@@ -64,7 +66,8 @@
             ]" />
 
           <CourseModuleCard numero="3" titulo="Projetos Práticos"
-            descricao="Aplicações reais para consolidar o conhecimento adquirido" status="liberado" :modulos="[
+            descricao="Aplicações reais para consolidar o conhecimento adquirido" status="liberado" :delay="600"
+            :modulos="[
               {
                 titulo: 'Sistema de Cadastro com Auth',
                 descricao: 'CRUD completo com autenticação usando Supabase'
@@ -76,7 +79,7 @@
             ]" />
 
           <CourseModuleCard numero="4" titulo="Backend e Assinaturas"
-            descricao="Infraestrutura robusta e monetização de aplicações" status="gravacao" :modulos="[
+            descricao="Infraestrutura robusta e monetização de aplicações" status="gravacao" :delay="800" :modulos="[
               {
                 titulo: 'Supabase Auth',
                 descricao: 'Autenticação completa: cadastro, login, recuperação de senha'
@@ -96,7 +99,7 @@
             ]" />
 
           <CourseModuleCard numero="5" titulo="Publicação e Manutenção"
-            descricao="Deploy profissional e gestão de aplicações em produção" status="gravacao" :modulos="[
+            descricao="Deploy profissional e gestão de aplicações em produção" status="gravacao" :delay="1000" :modulos="[
               {
                 titulo: 'Deploy com Vercel',
                 descricao: 'Publicação, domínio próprio, variáveis de ambiente e CI/CD'
@@ -104,7 +107,7 @@
             ]" />
 
           <CourseModuleCard numero="6" titulo="Projeto Final do Curso"
-            descricao="Criação completa de um SaaS do zero ao deploy" status="gravacao" :modulos="[
+            descricao="Criação completa de um SaaS do zero ao deploy" status="gravacao" :delay="1200" :modulos="[
               {
                 titulo: 'SaaS Completo',
                 descricao: 'Projeto final integrando todos os conceitos aprendidos no curso'

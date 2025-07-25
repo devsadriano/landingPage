@@ -1,18 +1,16 @@
 <template>
-    <button 
-        @click="handleClick"
-        class="
+    <button @click="handleClick" class="
           inline-flex items-center justify-center
-          px-8 py-4 
-          bg-gradient-secondary
-          text-white font-semibold text-lg
+          px-6 py-3 
+          bg-secondary-500
+          text-primary-950 font-semibold text-base
           rounded-lg
-          shadow-secondary-lg hover:shadow-glow-secondary
-          transform hover:scale-105 active:scale-95
-          transition-all duration-300 ease-out
-          border border-secondary-500/30
+          hover:bg-secondary-400
+          active:bg-secondary-600
+          transition-colors duration-200
+          border border-secondary-500
           hover:border-secondary-400
-          focus:outline-none focus:ring-4 focus:ring-secondary-500/20
+          focus:outline-none focus:ring-2 focus:ring-secondary-500/50
         ">
         {{ texto }}
     </button>
@@ -34,7 +32,7 @@ const handleClick = () => {
     if (props.scrollToCheckout) {
         const checkoutSection = document.getElementById('checkout')
         if (checkoutSection) {
-            checkoutSection.scrollIntoView({ 
+            checkoutSection.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             })

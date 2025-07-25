@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-gradient-to-br from-primary-950/80 to-primary-900/60 border border-secondary-500/20 rounded-lg overflow-hidden hover:border-secondary-500/40 transition-all duration-300">
+  <div class="bg-neutral-900/60 border border-neutral-700/50 rounded-lg overflow-hidden">
     <!-- Question -->
     <div 
-      class="p-6 cursor-pointer select-none hover:bg-primary-950/40 transition-colors"
+      class="p-5 cursor-pointer"
       @click="toggleExpanded"
     >
       <div class="flex items-center justify-between">
-        <h3 class="text-lg font-primary font-semibold text-white pr-4 leading-relaxed">
+        <h3 class="text-base font-medium text-neutral-100 pr-4">
           {{ pergunta }}
         </h3>
         
         <!-- Expand Icon -->
-        <div class="w-8 h-8 bg-secondary-500/10 rounded-full flex items-center justify-center hover:bg-secondary-500/20 transition-colors flex-shrink-0">
+        <div class="w-6 h-6 flex items-center justify-center flex-shrink-0">
           <svg 
-            class="w-4 h-4 text-secondary-400 transition-transform duration-300"
+            class="w-4 h-4 text-neutral-400 transition-transform duration-200"
             :class="{ 'rotate-180': isExpanded }"
             fill="none" 
             stroke="currentColor" 
@@ -27,12 +27,12 @@
     
     <!-- Answer -->
     <div 
-      class="overflow-hidden transition-all duration-400 ease-out"
-      :class="isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'"
+      class="overflow-hidden transition-all duration-300"
+      :class="isExpanded ? 'max-h-96' : 'max-h-0'"
     >
-      <div class="px-6 pb-6">
-        <div class="border-t border-secondary-500/20 pt-4">
-          <p class="text-neutral-300 leading-relaxed">
+      <div class="px-5 pb-5">
+        <div class="border-t border-neutral-700/50 pt-4">
+          <p class="text-neutral-400 text-sm leading-relaxed">
             {{ resposta }}
           </p>
         </div>

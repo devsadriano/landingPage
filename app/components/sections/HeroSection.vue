@@ -19,7 +19,7 @@
 
                 <!-- Main Title -->
                 <h1
-                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-primary font-bold text-white leading-tight">
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-primary font-bold text-white leading-tight">
                     Crie seus
                     <span class="text-secondary-400">SaaS</span>
                     com IA em até
@@ -29,7 +29,7 @@
 
                 <!-- Subtitle -->
                 <p
-                    class="text-lg sm:text-xl md:text-2xl font-body font-light text-neutral-200 max-w-3xl mx-auto leading-relaxed">
+                    class="text-base sm:text-lg md:text-xl font-body font-light text-neutral-200 max-w-3xl mx-auto leading-relaxed">
                     Desenvolva aplicativos com Inteligência Artificial de forma segura, escalável
                     com total controle sobre seu código
                 </p>

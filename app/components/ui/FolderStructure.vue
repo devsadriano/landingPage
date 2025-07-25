@@ -1,195 +1,128 @@
 <template>
-  <div class="bg-gradient-to-br from-primary-950/95 to-primary-900/90 border border-secondary-500/30 rounded-xl overflow-hidden shadow-2xl backdrop-blur-sm">
-    <!-- Header with project info -->
-    <div class="bg-gradient-to-r from-primary-900/90 to-primary-800/80 px-4 py-3 border-b border-secondary-500/20">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 bg-secondary-500/20 rounded-lg flex items-center justify-center">
-            <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-            </svg>
-          </div>
-          <div>
-            <h4 class="text-secondary-300 font-medium text-sm">Projeto Componentizado</h4>
-            <p class="text-neutral-400 text-xs">Estrutura organizada</p>
-          </div>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-2 h-2 bg-secondary-500 rounded-full animate-pulse"></div>
-          <span class="text-secondary-400 text-xs">Ativo</span>
-        </div>
+  <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl border border-secondary-500/30 shadow-2xl overflow-hidden">
+    <!-- Header -->
+    <div class="flex items-center justify-between px-4 py-3 bg-neutral-800/80 border-b border-neutral-700/50">
+      <div class="flex items-center space-x-2">
+        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-secondary-500 rounded-full"></div>
+      </div>
+      <div class="text-neutral-300 text-sm font-mono">project-structure</div>
+      <div class="flex items-center space-x-1 px-2 py-1 bg-secondary-500/20 border border-secondary-400/30 rounded-md">
+        <div class="w-2 h-2 bg-secondary-400 rounded-full"></div>
+        <span class="text-secondary-300 text-xs">Organizado</span>
       </div>
     </div>
 
-    <div class="flex min-h-[320px]">
-      <!-- File Tree -->
-      <div class="w-1/2 bg-gradient-to-b from-primary-950/80 to-primary-900/60 p-5 border-r border-secondary-500/20">
-        <div class="space-y-3 text-sm font-mono">
-          <!-- Project root indicator -->
-          <div class="flex items-center space-x-2 pb-2 border-b border-neutral-700/30">
-            <div class="w-3 h-3 bg-secondary-500/30 rounded-full"></div>
-            <span class="text-neutral-400 text-xs">meu-projeto</span>
-          </div>
-          
-          <!-- Components folder -->
-          <div class="flex items-center space-x-2 hover:bg-secondary-500/5 rounded px-2 py-1 transition-colors">
-            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+    <!-- Árvore de componentes -->
+    <div class="p-6 font-mono text-sm leading-relaxed">
+      <div class="flex">
+        <!-- Sidebar com árvore -->
+        <div class="w-1/2 pr-4 border-r border-neutral-700/50">
+          <!-- Header da árvore -->
+          <div class="flex items-center space-x-2 mb-4 text-neutral-400 text-xs">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+              </path>
             </svg>
-            <span class="text-secondary-300 font-medium">components</span>
-            <svg class="w-3 h-3 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
+            <span>Components</span>
           </div>
-          
-          <!-- BaseButton.vue -->
-          <div class="flex items-center space-x-2 ml-6 hover:bg-secondary-500/5 rounded px-2 py-1 transition-colors group">
-            <div class="w-4 h-4 bg-secondary-500/20 rounded flex items-center justify-center">
-              <svg class="w-3 h-3 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"/>
-              </svg>
-            </div>
-            <span class="text-secondary-300 group-hover:text-secondary-200">BaseButton.vue</span>
-            <div class="w-1 h-1 bg-secondary-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </div>
-          
-          <!-- BaseInput.vue -->
-          <div class="flex items-center space-x-2 ml-6 hover:bg-secondary-500/5 rounded px-2 py-1 transition-colors group">
-            <div class="w-4 h-4 bg-secondary-500/20 rounded flex items-center justify-center">
-              <svg class="w-3 h-3 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"/>
-              </svg>
-            </div>
-            <span class="text-secondary-300 group-hover:text-secondary-200">BaseInput.vue</span>
-            <div class="w-1 h-1 bg-secondary-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </div>
-          
-          <!-- Composables folder -->
-          <div class="flex items-center space-x-2 hover:bg-secondary-500/5 rounded px-2 py-1 transition-colors">
-            <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
-            </svg>
-            <span class="text-blue-300 font-medium">composables</span>
-            <svg class="w-3 h-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
-          </div>
-          
-          <!-- UseCustomer.ts -->
-          <div class="flex items-center space-x-2 ml-6 hover:bg-blue-500/5 rounded px-2 py-1 transition-colors group">
-            <div class="w-4 h-4 bg-blue-500/20 rounded flex items-center justify-center">
-              <span class="text-blue-400 text-xs font-bold">TS</span>
-            </div>
-            <span class="text-blue-300 group-hover:text-blue-200">UseCustomer.ts</span>
-            <div class="w-1 h-1 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </div>
-          
-          <!-- pages folder -->
-          <div class="flex items-center space-x-2 hover:bg-secondary-500/5 rounded px-2 py-1 transition-colors">
-            <svg class="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
-            </svg>
-            <span class="text-purple-300 font-medium">pages</span>
-            <svg class="w-3 h-3 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
-          </div>
-          
-          <!-- index.vue -->
-          <div class="flex items-center space-x-2 ml-6 hover:bg-purple-500/5 rounded px-2 py-1 transition-colors group">
-            <div class="w-4 h-4 bg-purple-500/20 rounded flex items-center justify-center">
-              <svg class="w-3 h-3 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"/>
-              </svg>
-            </div>
-            <span class="text-purple-300 group-hover:text-purple-200">index.vue</span>
-            <div class="w-1 h-1 bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Code Preview -->
-      <div class="w-1/2 bg-gradient-to-b from-primary-950/60 to-primary-900/40 p-5">
-        <div class="mb-4 flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <div class="w-4 h-4 bg-purple-500/20 rounded flex items-center justify-center">
-              <svg class="w-3 h-3 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"/>
+          <!-- Pasta components -->
+          <div class="space-y-1">
+            <div class="flex items-center space-x-2 text-neutral-300 bg-neutral-700/30 px-2 py-1 rounded">
+              <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                </path>
+              </svg>
+              <span>components</span>
+              <svg class="w-3 h-3 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </div>
-            <span class="text-purple-300 text-sm font-mono font-medium">index.vue</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+
+            <!-- BaseButton.vue -->
+            <div class="flex items-center space-x-2 ml-6 text-secondary-400">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              <span>BaseButton.vue</span>
+            </div>
+
+            <!-- BaseInput.vue -->
+            <div class="flex items-center space-x-2 ml-6 text-secondary-400">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              <span>BaseInput.vue</span>
+            </div>
+
+            <!-- Pasta composables -->
+            <div class="flex items-center space-x-2 text-neutral-300 mt-3">
+              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                </path>
+              </svg>
+              <span>composables</span>
+              <svg class="w-3 h-3 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+
+            <!-- UseCustomer.ts -->
+            <div class="flex items-center space-x-2 ml-6 text-blue-300">
+              <span class="text-xs bg-blue-500/20 px-1 rounded text-blue-400">TS</span>
+              <span>UseCustomer.ts</span>
+            </div>
+
+            <!-- app.vue -->
+            <div class="flex items-center space-x-2 text-secondary-300 mt-3">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              <span>app.vue</span>
+            </div>
+
+            <!-- package.json -->
+            <div class="flex items-center space-x-2 text-yellow-300">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span>package.json</span>
+            </div>
           </div>
         </div>
-        
-        <div class="bg-primary-950/50 rounded-lg p-3 border border-neutral-700/30 overflow-hidden">
-          <div class="space-y-0.5 text-[10px] font-mono leading-tight">
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">1</span>
-              <span class="text-red-400">&lt;script</span> <span class="text-yellow-400">setup</span><span class="text-red-400">&gt;</span>
+
+        <!-- Código do lado direito -->
+        <div class="w-1/2 pl-4">
+          <div class="text-neutral-400 text-xs mb-2">
+            <svg class="w-3 h-3 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            app.vue
+          </div>
+          <div class="space-y-1 text-xs">
+            <div class="text-neutral-500">&lt;<span class="text-red-300">script</span> <span
+                class="text-yellow-300">setup</span>&gt;</div>
+            <div class="text-neutral-300 ml-2">const customer = <span class="text-secondary-400">UseCustomer</span>()
             </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">2</span>
-              <span class="text-purple-400">const</span> <span class="text-neutral-300">{ </span><span class="text-blue-300">funcaoPrincipal</span> <span class="text-neutral-300">} = </span><span class="text-yellow-400">UseCustomer</span><span class="text-neutral-300">()</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">3</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">4</span>
-              <span class="text-purple-400">const</span> <span class="text-blue-300">handleClick</span> <span class="text-neutral-300">= () =&gt; {</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">5</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;</span><span class="text-blue-300">funcaoPrincipal</span><span class="text-neutral-300">()</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">6</span>
-              <span class="text-neutral-300">}</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">7</span>
-              <span class="text-red-400">&lt;/script&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">8</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">9</span>
-              <span class="text-red-400">&lt;template&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">10</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;</span><span class="text-red-400">&lt;div&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">11</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text-red-400">&lt;BaseInput</span> <span class="text-yellow-400">placeholder</span><span class="text-neutral-300">=</span><span class="text-green-400">"..."</span> <span class="text-red-400">/&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">12</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text-red-400">&lt;BaseButton</span> <span class="text-yellow-400">@click</span><span class="text-neutral-300">=</span><span class="text-green-400">"handleClick"</span><span class="text-red-400">&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">13</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Executar</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">14</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text-red-400">&lt;/BaseButton&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">15</span>
-              <span class="text-neutral-300">&nbsp;&nbsp;</span><span class="text-red-400">&lt;/div&gt;</span>
-            </div>
-            <div class="flex">
-              <span class="text-neutral-500 w-4 text-right mr-2 flex-shrink-0">16</span>
-              <span class="text-red-400">&lt;/template&gt;</span>
-            </div>
+            <div class="text-neutral-500">&lt;/<span class="text-red-300">script</span>&gt;</div>
+            <div class="mt-3 text-neutral-500">&lt;<span class="text-red-300">template</span>&gt;</div>
+            <div class="ml-2 text-neutral-500">&lt;<span class="text-yellow-300">main</span>&gt;</div>
+            <div class="ml-4 text-neutral-500">&lt;<span class="text-secondary-300">BaseInput</span></div>
+            <div class="ml-6 text-blue-300">v-model="customer.name"</div>
+            <div class="ml-4 text-neutral-500">/&gt;</div>
+            <div class="ml-4 text-neutral-500">&lt;<span class="text-secondary-300">BaseButton</span></div>
+            <div class="ml-6 text-blue-300">@click="customer.save()"</div>
+            <div class="ml-4 text-neutral-500">&gt;</div>
+            <div class="ml-6 text-neutral-300">Salvar</div>
+            <div class="ml-4 text-neutral-500">&lt;/<span class="text-secondary-300">BaseButton</span>&gt;</div>
+            <div class="ml-2 text-neutral-500">&lt;/<span class="text-yellow-300">main</span>&gt;</div>
+            <div class="text-neutral-500">&lt;/<span class="text-red-300">template</span>&gt;</div>
           </div>
         </div>
       </div>
@@ -198,6 +131,7 @@
 </template>
 
 <script setup>
+// Componente da árvore de elementos
 defineOptions({
   name: 'FolderStructure'
 })
