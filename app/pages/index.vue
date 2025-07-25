@@ -15,6 +15,12 @@
         <!-- Possibilidades Section -->
         <PossibilidadesSection />
 
+        <!-- Conteúdo do Curso Section -->
+        <ConteudoCursoSection />
+
+        <!-- Depoimentos Section -->
+        <DepoimentosSection />
+
 
     </div>
 </template>
@@ -26,6 +32,8 @@ import MetodoSection from '~/components/sections/MetodoSection.vue'
 import VibeCodingSection from '~/components/sections/VibeCodingSection.vue'
 import MetodoComponentizacaoSection from '~/components/sections/MetodoComponentizacaoSection.vue'
 import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
+import ConteudoCursoSection from '~/components/sections/ConteudoCursoSection.vue'
+import DepoimentosSection from '~/components/sections/DepoimentosSection.vue'
 
 // Configurações da página
 useHead({
