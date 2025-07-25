@@ -2,9 +2,18 @@
     <div>
         <!-- Hero Section -->
         <HeroSection />
-        
+
         <!-- Método Section -->
         <MetodoSection />
+
+        <!-- Vibe Coding Section -->
+        <VibeCodingSection />
+
+        <!-- Método Componentização Section -->
+        <MetodoComponentizacaoSection />
+
+        <!-- Possibilidades Section -->
+        <PossibilidadesSection />
 
 
     </div>
@@ -14,6 +23,9 @@
 // Import explícito dos componentes
 import HeroSection from '~/components/sections/HeroSection.vue'
 import MetodoSection from '~/components/sections/MetodoSection.vue'
+import VibeCodingSection from '~/components/sections/VibeCodingSection.vue'
+import MetodoComponentizacaoSection from '~/components/sections/MetodoComponentizacaoSection.vue'
+import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
 
 // Configurações da página
 useHead({
