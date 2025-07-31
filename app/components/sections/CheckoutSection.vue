@@ -76,7 +76,7 @@
                   </div>
                   <div class="bg-secondary-500/10 border border-secondary-500/30 rounded-lg p-3">
                     <p class="text-secondary-300 text-lg font-semibold">
-                      ou 12x de <span class="text-2xl font-bold text-secondary-400">R$ 49,90</span>
+                      ou 12x de <span class="text-2xl font-bold text-secondary-400">R$ 49,57</span>
                     </p>
                     <p class="text-neutral-400 text-sm mt-1">no cartão de crédito</p>
                   </div>
@@ -85,10 +85,13 @@
             </div>
 
             <!-- Purchase Button -->
-            <button
-              class="w-full bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-primary-950 font-bold py-5 px-8 rounded-xl transition-all duration-200 text-xl shadow-lg hover:shadow-secondary-500/25 transform hover:scale-105">
+            <a 
+              href="https://pagamento.data7apps.com.br/subscribe/acelerador-saas-oferta-de-lancamento"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-primary-950 font-bold py-5 px-8 rounded-xl transition-all duration-200 text-xl shadow-lg hover:shadow-secondary-500/25 transform hover:scale-105 text-center">
               🚀 GARANTIR MINHA VAGA - R$ 497,00
-            </button>
+            </a>
 
             <!-- Payment Methods -->
             <div class="text-center">

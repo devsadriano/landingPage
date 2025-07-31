@@ -15,57 +15,74 @@
       <div class="max-w-6xl mx-auto">
         <!-- Section Header -->
         <div class="text-center space-y-6 mb-16">
-          <Badge texto="Depoimentos" />
+          <Badge texto="Pré-Lançamento" />
           
           <h2 class="text-3xl sm:text-4xl md:text-5xl font-primary font-bold text-white leading-tight">
-            O que nossos <span class="text-secondary-400">Alunos</span> dizem
+            O que a <span class="text-secondary-400">Comunidade</span> diz
           </h2>
           
           <p class="text-lg sm:text-xl font-body font-light text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-            Histórias reais de transformação e sucesso com o Método Componentização Extrema
+            Estamos em pré-lançamento e ainda não temos alunos formados, mas veja o que nossa comunidade nas redes sociais já está falando sobre o método. 
+            <span class="text-secondary-400 font-medium">Em breve, seus depoimentos estarão aqui!</span>
           </p>
         </div>
         
-        <!-- Testimonials Grid -->
+        <!-- YouTube Comments Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <TestimonialCard
-            nome="Carlos Silva"
-            cargo="Desenvolvedor Frontend"
-            texto="O método revolucionou minha forma de desenvolver. Consegui criar meu primeiro SaaS em apenas 3 semanas usando as técnicas aprendidas. A componentização extrema realmente funciona!"
+          <YoutubeCommentCard
+            nome="Edy Carlos"
+            texto="Quanto conhecimento, parabéns Prof. Israel. Esses tipo de conteúdo levaríamos semestres para entender em uma universidade. Muitos até saem com diploma sem esse conhecimento"
+            avatar="https://yt3.ggpht.com/ytc/AIdro_lx8ZJR49n5Dl7bac59xELcqZSDXVK1G_YrKHb2-WHvNio=s88-c-k-c0x00ffffff-no-rj"
           />
           
-          <TestimonialCard
-            nome="Ana Rodrigues"
-            cargo="Empreendedora Digital"
-            texto="Sem conhecimento técnico profundo, consegui criar uma plataforma de agendamentos completa. O curso é muito didático e prático. Recomendo para quem quer resultados rápidos."
+          <YoutubeCommentCard
+            nome="Geovany Ferreira"
+            texto="Muito bom, ao contrário do que muitos dizem 'Crie seu Saas em 1 dia com IA' que a gente vê por aí, as pessoas se encantam com a criação rápida, mas que vai apenas do 1 ao 3, já do 3 ao 5 o jogo é outro, isso que mostrou é a verdadeira realidade de desenvolvimento com IA"
+            avatar="https://yt3.ggpht.com/QMuhhJQP67bnmTMDxfsyJ01qNr9jbRABvlyOMwlRMYD5NJl4sHgUMO7LDhIy4V0EswQPWhzf=s88-c-k-c0x00ffffff-no-rj"
           />
           
-          <TestimonialCard
-            nome="Pedro Santos"
-            cargo="Freelancer"
-            texto="Aumentei minha produtividade em 300%. O que antes levava meses para desenvolver, agora faço em semanas. O investimento no curso se pagou no primeiro projeto."
+          <YoutubeCommentCard
+            nome="Rodrigo Toledo"
+            texto="Essa parada de componentização extrema mudou meu mindset completamente. Evoluí muito depois que vi o vídeo que você fala muito sobre isso."
+            avatar="https://yt3.ggpht.com/rkn6zOexeltqC8dw4IWIGQHTO5z3pCrZ7PFKoCAIiViAvD8QuSWhAPdbIpNod3sv_K9Nw5ZdYg=s88-c-k-c0x00ffffff-no-rj"
           />
           
-          <TestimonialCard
-            nome="Mariana Costa"
-            cargo="Startup Founder"
-            texto="Consegui validar minha ideia rapidamente criando um MVP funcional. A abordagem com IA me permitiu focar no negócio enquanto a tecnologia fluía naturalmente."
+          <YoutubeCommentCard
+            nome="Manoel Neto"
+            texto="Voltando aqui no seu canal só para agradecer de verdade. Foi um grande achado ter assistido sua live criando um projeto do zero. Com suas técnicas de componentização extrema consegui desenvolver meu primeiro aplicativo em produção com Vue, já com pagamento integrado. Coloquei um app 100% funcional no ar por apenas 3 dólares!"
+            avatar="https://yt3.ggpht.com/pI16YJNuZGWwQMiNP-4bsZhIEdTiWDqjWeFMAcRYnq7rWFxDLqz5bpQ0V39O8Kupymtf61rPDA=s88-c-k-c0x00ffffff-no-rj"
           />
           
-          <TestimonialCard
-            nome="Rafael Lima"
-            cargo="Desenvolvedor Full Stack"
-            texto="Mesmo sendo experiente, aprendi técnicas que não conhecia. A metodologia é sólida e os projetos práticos são excelentes para consolidar o conhecimento."
+          <YoutubeCommentCard
+            nome="Bruno Lincoln"
+            texto="O seu vídeo faz total sentido do começo ao fim. E obrigado pela sinceridade em compartilhar o que torna o caminho muito mais solidificado pro que cada um aqui tem trabalhado. Eu compartilho da mesma opinião sobre não ficar pulando de ferramenta em ferramenta sem querer se aprofundar no que realmente estamos fazendo."
+            avatar="https://yt3.ggpht.com/Olc7VVawo75B7WyzlGY5XapvIR3GmAzkJUKumSogI_T52q6svPb4sk_ghmWp8V3dq_SLPL4xEg=s88-c-k-c0x00ffffff-no-rj"
           />
           
-          <TestimonialCard
-            nome="Julia Ferreira"
-            cargo="Designer UX/UI"
-            texto="Como designer, sempre quis entender mais de desenvolvimento. O curso me deu autonomia para criar protótipos funcionais e me comunicar melhor com desenvolvedores."
+          <YoutubeCommentCard
+            nome="Tony Riko"
+            texto="Vídeo excelente e muito certo. Eu sempre pensei desse jeito e uso as ferramentas para desenvolver componentes dos meus projetos, e não sinto segurança em criar um aplicativo dependente de uma plataforma. Acho mais seguro ter total controle sobre o meu projeto. É mais fácil criar um projeto do zero do que refazer um projeto de outra pessoa."
+            avatar="https://yt3.ggpht.com/ytc/AIdro_kN13zFuvw9yU5Kfm6tqHFO6tgyzOgmu069vuTmtbSkS9c=s88-c-k-c0x00ffffff-no-rj"
           />
         </div>
         
-        <!-- Stats -->
+        <!-- Pre-launch Message -->
+        <div class="mt-16 text-center">
+          <div class="bg-gradient-to-r from-secondary-500/10 to-secondary-600/10 border border-secondary-500/20 rounded-lg p-8 max-w-4xl mx-auto">
+            <div class="flex items-center justify-center mb-4">
+              <div class="w-3 h-3 bg-secondary-500 rounded-full animate-pulse mr-3"></div>
+              <span class="text-secondary-400 font-semibold text-sm uppercase tracking-wider">Pré-Lançamento Ativo</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-primary font-bold text-white mb-4">
+              Seja um dos primeiros alunos!
+            </h3>
+            <p class="text-neutral-300 leading-relaxed">
+              O curso está sendo lançado hoje e você pode ser um dos pioneiros a dominar o 
+              <span class="text-secondary-400 font-medium">Método Componentização Extrema</span>. 
+              Garante sua vaga e em breve seu depoimento estará aqui inspirando outros desenvolvedores.
+            </p>
+          </div>
+        </div>
        
       </div>
     </div>
@@ -77,7 +94,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 // Import explícito dos componentes
 import Badge from '~/components/ui/Badge.vue'
-import TestimonialCard from '~/components/ui/TestimonialCard.vue'
+import YoutubeCommentCard from '~/components/ui/YoutubeCommentCard.vue'
 
 // Scroll animation
 const depoimentosSection = ref(null)
