@@ -14,7 +14,7 @@
             </div>
 
             <!-- Video container -->
-            <div class="relative aspect-video bg-neutral-950">
+            <div class="relative bg-neutral-950" style="aspect-ratio: 3/2;">
                 <iframe v-if="videoId"
                     :src="`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&showinfo=0`"
                     class="absolute inset-0 w-full h-full" frameborder="0"
@@ -24,7 +24,8 @@
                 <!-- Placeholder -->
                 <div v-else class="absolute inset-0 flex items-center justify-center">
                     <div class="text-center">
-                        <div class="w-12 h-12 mx-auto mb-3 bg-secondary-500/20 rounded-full flex items-center justify-center">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-secondary-500/20 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z" />
                             </svg>
