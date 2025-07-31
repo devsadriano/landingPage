@@ -9,7 +9,7 @@
                     <div class="w-2.5 h-2.5 bg-yellow-500 rounded-full"></div>
                     <div class="w-2.5 h-2.5 bg-secondary-500 rounded-full"></div>
                 </div>
-                <div class="text-xs text-neutral-500">Demonstração</div>
+                <div class="text-xs text-neutral-500">Acelerador SaaS - Pré-lançamento</div>
                 <div class="w-16"></div>
             </div>
 
