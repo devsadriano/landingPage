@@ -57,7 +57,8 @@
                             <p class="text-neutral-300 text-sm mb-3">
                                 Clique aqui e informe o email <span v-if="emailUsuario"
                                     class="text-secondary-400 font-medium">{{ emailUsuario }}</span><span v-else
-                                    class="text-secondary-400 font-medium">usado na compra</span> para criar sua conta.
+                                    class="text-secondary-400 font-medium">que você usou na compra</span> para criar sua
+                                conta.
                             </p>
                             <a :href="linkCriarConta" target="_blank" rel="noopener noreferrer"
                                 class="inline-block bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-primary-950 font-bold py-2 px-4 rounded-lg transition-all duration-200 text-sm">
@@ -129,15 +130,30 @@ const nomeUsuario = computed(() => {
     const nome = route.query.nome
     if (!nome) return null
 
+    // Verifica se é um placeholder do sistema de pagamento
+    const nomeStr = nome.toString()
+    if (nomeStr.includes('[') && nomeStr.includes(']')) {
+        return null // Não mostra nome se for placeholder
+    }
+
     // Capitaliza o nome
-    return nome.toString()
+    return nomeStr
         .split(' ')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
         .join(' ')
 })
 
 const emailUsuario = computed(() => {
-    return route.query.email || null
+    const email = route.query.email
+    if (!email) return null
+
+    // Verifica se é um placeholder do sistema de pagamento
+    const emailStr = email.toString()
+    if (emailStr.includes('[') && emailStr.includes(']')) {
+        return null // Não mostra email se for placeholder
+    }
+
+    return emailStr
 })
 
 // Link para criar conta com email pré-preenchido
