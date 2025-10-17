@@ -1,60 +1,51 @@
 <template>
-    <div>
-        <!-- Hero Section -->
-        <HeroSection />
+    <div class="min-h-screen">
+        <!-- Hero Section - Advocacia -->
+        <AdvocaciaHeroSection />
 
-        <!-- Método Section -->
-        <MetodoSection />
+        <!-- Serviços Jurídicos -->
+        <ServicosJuridicosSection />
 
-        <!-- Vibe Coding Section -->
-        <VibeCodingSection />
+        <!-- Sobre o Advogado -->
+        <SobreAdvogadoSection />
 
-        <!-- Método Componentização Section -->
-        <MetodoComponentizacaoSection />
+        <!-- Áreas de Atuação -->
+        <AreasAtuacaoSection />
 
-        <!-- Possibilidades Section -->
-        <PossibilidadesSection />
+        <!-- Depoimentos de Clientes -->
+        <DepoimentosClientesSection />
 
-        <!-- Conteúdo do Curso Section -->
-        <ConteudoCursoSection />
+        <!-- Contato -->
+        <ContatoSection />
 
-        <!-- Depoimentos Section -->
-        <DepoimentosSection />
-
-        <!-- Checkout Section -->
-        <CheckoutSection />
-
-        <FaqSection/>
-
-        <!-- Footer Section -->
-        <FooterSection />
+        <!-- Footer -->
+        <AdvocaciaFooterSection />
 
         <!-- WhatsApp Button -->
-        <WhatsAppButton />
-
+        <AdvocaciaWhatsAppButton />
     </div>
 </template>
 
 <script setup>
-// Import explícito dos componentes
-import HeroSection from '~/components/sections/HeroSection.vue'
-import MetodoSection from '~/components/sections/MetodoSection.vue'
-import VibeCodingSection from '~/components/sections/VibeCodingSection.vue'
-import MetodoComponentizacaoSection from '~/components/sections/MetodoComponentizacaoSection.vue'
-import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
-import ConteudoCursoSection from '~/components/sections/ConteudoCursoSection.vue'
-import DepoimentosSection from '~/components/sections/DepoimentosSection.vue'
-import CheckoutSection from '~/components/sections/CheckoutSection.vue'
-import FaqSection from '~/components/sections/FaqSection.vue'
-import FooterSection from '~/components/sections/FooterSection.vue'
-import WhatsAppButton from '~/components/ui/WhatsAppButton.vue'
-
+// Import dos componentes específicos para advocacia
+import AdvocaciaHeroSection from '~/components/sections/AdvocaciaHeroSection.vue'
+import ServicosJuridicosSection from '~/components/sections/ServicosJuridicosSection.vue'
+import SobreAdvogadoSection from '~/components/sections/SobreAdvogadoSection.vue'
+import AreasAtuacaoSection from '~/components/sections/AreasAtuacaoSection.vue'
+import DepoimentosClientesSection from '~/components/sections/DepoimentosClientesSection.vue'
+import ContatoSection from '~/components/sections/ContatoSection.vue'
+import AdvocaciaFooterSection from '~/components/sections/AdvocaciaFooterSection.vue'
+import AdvocaciaWhatsAppButton from '~/components/ui/AdvocaciaWhatsAppButton.vue'
 
 // Configurações da página
 useHead({
-    title: 'Crie seus SaaS com IA - Plataforma No-Code',
+    title: 'Paulo Advogado - Advocacia e Consultoria Jurídica',
     meta: [
-        { name: 'description', content: 'Desenvolva aplicativos com Inteligência Artificial de forma segura, escalável com total controle sobre seu código' }
+        { name: 'description', content: 'Paulo Advogado oferece serviços jurídicos especializados em direito civil, empresarial e trabalhista. Consultoria jurídica de excelência com mais de 15 anos de experiência.' },
+        { name: 'keywords', content: 'advocacia, advogado, consultoria jurídica, direito civil, direito empresarial, direito trabalhista' },
+        { property: 'og:title', content: 'Paulo Advogado - Advocacia e Consultoria Jurídica' },
+        { property: 'og:description', content: 'Serviços jurídicos especializados com excelência e experiência' },
+        { property: 'og:type', content: 'website' }
     ]
 })
 </script>
