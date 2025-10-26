@@ -72,17 +72,18 @@ export default {
       colors: {
         // Paleta Paulo Advogado
         advocacia: {
-          // Azul principal (#212d3f) em variações
-          'azul-principal': '#212d3f',
-          'azul-escuro': '#1a2332',
-          'azul-claro': '#2c3851',
-          'azul-hover': '#364670',
+          // Verde principal (#2d4236) em variações
+          'azul-principal': '#2d4236',
+          'azul-escuro': '#233429',
+          'azul-claro': '#3a5144',
+          'azul-hover': '#475f52',
+          'azul-medio': '#364a3c',
           
-          // Dourado principal (#f8af18) em variações  
-          'dourado-principal': '#f8af18',
-          'dourado-escuro': '#e09a0d',
-          'dourado-claro': '#fbc02d',
-          'dourado-hover': '#f5a623',
+          // Marrom/Dourado secundário (#95744f) em variações  
+          'dourado-principal': '#95744f',
+          'dourado-escuro': '#7d5f3c',
+          'dourado-claro': '#a88762',
+          'dourado-hover': '#8a6b45',
           
           // Neutros complementares
           'branco': '#ffffff',
@@ -94,30 +95,30 @@ export default {
         
         // Cores principais (mantidas para compatibilidade)
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#212d3f', // Mudado para azul da advocacia
-          600: '#1a2332',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-          950: '#212d3f', // Cor principal central
+          50: '#f0f9f4',
+          100: '#dcf4e1',
+          200: '#bce8c7',
+          300: '#8cd5a0',
+          400: '#55ba71',
+          500: '#2d4236', // Mudado para verde da advocacia
+          600: '#233429',
+          700: '#1d2b22',
+          800: '#19231d',
+          900: '#151d18',
+          950: '#2d4236', // Cor principal central
         },
         secondary: {
-          50: '#fef9e7',
-          100: '#fef3c7',
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#f8af18', // Dourado da advocacia
-          600: '#e09a0d',
-          700: '#d97706',
-          800: '#92400e',
-          900: '#78350f',
-          950: '#451a03',
+          50: '#faf8f3',
+          100: '#f4f0e6',
+          200: '#e8dcc7',
+          300: '#dbc5a0',
+          400: '#cca670',
+          500: '#95744f', // Marrom da advocacia
+          600: '#7d5f3c',
+          700: '#6b4d2f',
+          800: '#584027',
+          900: '#453420',
+          950: '#2a1f13',
         },
         // Tons neutros
         neutral: {

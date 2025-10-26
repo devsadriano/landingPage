@@ -10,7 +10,8 @@
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 container mx-auto px-6 py-20 text-center">
+              <!-- Content -->
+      <div class="relative z-10 w-full py-20 text-center" style="padding-left: 12%; padding-right: 12%;">
             <div class="max-w-4xl mx-auto space-y-12">
                 <!-- Badge -->
                 <div>

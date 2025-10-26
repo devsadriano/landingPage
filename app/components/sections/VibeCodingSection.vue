@@ -7,8 +7,9 @@
         </div>
 
         <!-- Content -->
-        <div ref="vibeCodingSection"
-            class="relative z-10 container mx-auto px-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+        <div ref="vibeSection"
+            class="relative z-10 w-full opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+            style="padding-left: 12%; padding-right: 12%;"
             :class="{ 'opacity-100 translate-y-0': isVisible }">
             <div class="max-w-6xl mx-auto text-center">
                 <!-- Section Header -->

@@ -3,104 +3,102 @@
         <!-- Background Pattern -->
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         
-        <!-- Navigation -->
-        <nav class="relative z-10 px-6 py-4">
-            <div class="max-w-7xl mx-auto flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-advocacia-dourado-principal rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-advocacia-azul-principal" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
-                        </svg>
+                <!-- Navigation -->
+                <header class="sticky top-0 z-20 bg-gray-50 border-b border-gray-200">
+                    <div class="w-full flex items-center justify-between py-2" style="padding-left: 12%; padding-right: 12%;">
+                        <!-- Links Left/Center -->
+                        <nav class="hidden md:flex space-x-6">
+                            <a href="#advlabs" class="text-gray-600 hover:text-primary font-medium text-sm">AdvLabs</a>
+                            <a href="#comunidade" class="text-gray-600 hover:text-primary font-medium text-sm">Comunidade Ambiental</a>
+                            <a href="#dae2025" class="text-gray-600 hover:text-primary font-medium text-sm">DAE 2025</a>
+                        </nav>
+                        <!-- Social & Contato Right -->
+                        <div class="flex items-center space-x-3">
+                            <!-- Social Icons -->
+                            <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-primary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0"></path></svg></a>
+                            <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-primary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"></path></svg></a>
+                            <a href="#" aria-label="YouTube" class="text-gray-400 hover:text-primary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.112C19.633 3.5 12 3.5 12 3.5s-7.633 0-9.386.574a2.994 2.994 0 0 0-2.112 2.112C0 7.939 0 12 0 12s0 4.061.502 5.814a2.994 2.994 0 0 0 2.112 2.112C4.367 20.5 12 20.5 12 20.5s7.633 0 9.386-.574a2.994 2.994 0 0 0 2.112-2.112C24 16.061 24 12 24 12s0-4.061-.502-5.814zM9.545 15.568V8.432l6.545 3.568-6.545 3.568z"></path></svg></a>
+                            <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-primary"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.414 3.678 1.395c-.981.981-1.264 2.093-1.323 3.374C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.611.059 1.281.342 2.393 1.323 3.374.981.981 2.093 1.264 3.374 1.323C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.342 3.374-1.323.981-.981 1.264-2.093 1.323-3.374.059-1.279.072-1.688.072-7.611 0-5.923-.013-6.332-.072-7.611-.059-1.281-.342-2.393-1.323-3.374-.981-.981-2.093-1.264-3.374-1.323C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg></a>
+                            <!-- Telefone -->
+                            <span class="text-gray-400 text-xs">(48) 3211-8486</span>
+                            <!-- Email -->
+                            <span class="text-gray-400 text-xs">contato@advambiental.com.br</span>
+                            <!-- WhatsApp Button -->
+                            <a href="https://wa.me/554832118486" target="_blank" class="bg-green-400 hover:bg-green-500 text-white font-semibold px-4 py-1 rounded-full text-xs transition-colors">
+                                FALE COM A GENTE
+                            </a>
+                        </div>
                     </div>
-                    <span class="text-2xl font-bold text-white">Paulo Advogado</span>
-                </div>
+                </header>
+
+        <!-- Video Background - Começa junto com o texto -->
+        <div class="absolute inset-0 z-0">
+            <!-- Fundo branco à esquerda -->
+            <div class="absolute inset-0 bg-white"></div>
+            
+            <!-- Container do vídeo com gradiente -->
+            <div class="absolute inset-0">
+                <video 
+                    class="w-full h-full object-cover"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+                    <source src="/videos/vd.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
                 
-                <!-- Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#servicos" class="text-white hover:text-advocacia-dourado-principal transition-colors">Serviços</a>
-                    <a href="#sobre" class="text-white hover:text-advocacia-dourado-principal transition-colors">Sobre</a>
-                    <a href="#areas" class="text-white hover:text-advocacia-dourado-principal transition-colors">Áreas</a>
-                    <a href="#depoimentos" class="text-white hover:text-advocacia-dourado-principal transition-colors">Depoimentos</a>
-                    <a href="#contato" class="bg-advocacia-dourado-principal hover:bg-advocacia-dourado-hover text-advocacia-azul-principal px-6 py-2 rounded-lg font-semibold transition-colors">
-                        Contato
-                    </a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+                <!-- Gradiente que cobre todo o vídeo: totalmente branco à esquerda (0% opacidade no vídeo), transparente à direita (100% opacidade no vídeo) -->
+                <div class="absolute inset-0" style="background: linear-gradient(to right, 
+                    rgba(255,255,255,1) 0%, 
+                    rgba(255,255,255,1) 40%, 
+                    rgba(255,255,255,0.85) 45%, 
+                    rgba(255,255,255,0.6) 50%, 
+                    rgba(255,255,255,0.35) 55%, 
+                    rgba(255,255,255,0.15) 60%, 
+                    rgba(255,255,255,0.05) 65%, 
+                    transparent 70%);"></div>
             </div>
-        </nav>
+        </div>
 
         <!-- Hero Content -->
-        <div class="relative z-10 px-6 py-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div class="text-white">
-                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                            Excelência em 
-                            <span class="text-advocacia-dourado-principal">Advocacia</span>
+        <div class="relative z-10 py-2 min-h-[calc(100vh-80px)] flex flex-col">
+            <div class="w-full" style="padding-left: 12%; padding-right: 4%;">
+                <!-- Logo no topo (Área 1) -->
+                <div class="pt-1 mb-2">
+                    <img src="/images/logoEstendida.jpg" alt="Farenzena Franco Advogados Associados" class="h-32 w-full max-w-xl">
+                </div>
+                
+                <!-- Menu de links abaixo da logo (Área 2) -->
+                <nav class="flex flex-wrap gap-6 mb-16">
+                    <a href="#escritorio" class="font-semibold text-base transition-colors menu-link">ESCRITÓRIO</a>
+                    <a href="#advogados" class="font-semibold text-base transition-colors menu-link">ADVOGADOS</a>
+                    <a href="#atuacao" class="font-medium text-base transition-colors menu-link">ATUAÇÃO</a>
+                    <a href="#informes" class="font-medium text-base transition-colors menu-link">INFORMES</a>
+                    <a href="#faleconosco" class="font-medium text-base transition-colors menu-link">FALE CONOSCO</a>
+                </nav>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-40">
+                    <!-- Left Content - Texto principal com espaçamento -->
+                    <div style="color: #47524d;">
+                        <!-- Texto principal -->
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6" style="color: #47524d;">
+                            "Não vendemos resultado. Vendemos Técnica. <span style="color: #95744f;">E nossa Técnica geralmente dá Resultado.</span>"
                         </h1>
-                        <p class="text-xl text-gray-200 mb-8 leading-relaxed">
-                            Mais de 15 anos defendendo seus direitos com competência, 
-                            ética e resultados comprovados. Soluções jurídicas 
-                            personalizadas para cada cliente.
+                        
+                        <p class="text-lg mb-8 italic" style="color: #95744f;">
+                            Dr. Diovane Franco
                         </p>
                         
-                        <!-- CTA Buttons -->
-                        <div class="flex flex-col sm:flex-row gap-4 mb-12">
-                            <button class="bg-advocacia-dourado-principal hover:bg-advocacia-dourado-hover text-advocacia-azul-principal px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                                Agende uma Consulta
-                            </button>
-                            <button class="border-2 border-white text-white hover:bg-white hover:text-advocacia-azul-principal px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                                Saiba Mais
-                            </button>
-                        </div>
-                        
-                        <!-- Stats -->
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-advocacia-dourado-principal mb-2">500+</div>
-                                <div class="text-sm text-gray-200">Casos Resolvidos</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-advocacia-dourado-principal mb-2">15+</div>
-                                <div class="text-sm text-gray-200">Anos de Experiência</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-advocacia-dourado-principal mb-2">98%</div>
-                                <div class="text-sm text-gray-200">Taxa de Sucesso</div>
-                            </div>
-                        </div>
+                        <!-- Descriptive Text -->
+                        <p class="text-sm leading-relaxed" style="color: #47524d;">
+                            O Escritório <span class="font-semibold" style="color: #95744f;">Farenzena Franco Advogados Associados</span> defende pessoas físicas e jurídicas através de defesas administrativas e judiciais elaboradas a partir da perfeição e excelência, com refinamento, elegância e identidade jurídica, na busca incessante pela resultado, cujo objetivo final é a satisfação do cliente.
+                        </p>
                     </div>
                     
-                    <!-- Right Content - Professional Image -->
+                    <!-- Right Content - Vazio para mostrar o vídeo -->
                     <div class="relative">
-                        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 border border-white border-opacity-20">
-                            <div class="aspect-square bg-gradient-to-br from-advocacia-dourado-principal to-advocacia-dourado-claro rounded-xl flex items-center justify-center">
-                                <!-- Professional Icon -->
-                                <svg class="w-32 h-32 text-advocacia-azul-principal" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="mt-6 text-center">
-                                <h3 class="text-2xl font-bold text-white mb-2">Dr. Paulo Silva</h3>
-                                <p class="text-gray-200 mb-4">OAB/SP 123.456</p>
-                                <div class="flex justify-center space-x-4">
-                                    <div class="w-8 h-8 bg-advocacia-dourado-principal rounded-full flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-advocacia-azul-principal" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <span class="text-white">Especialista Certificado</span>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Espaço vazio para o vídeo aparecer -->
                     </div>
                 </div>
             </div>
@@ -114,6 +112,33 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+/* Links do menu na cor #95744f e hover branco */
+.menu-link {
+    color: #95744f;
+}
+.menu-link:hover {
+    color: #000;
+}
+.youtube-video-wrapper iframe {
+    pointer-events: none !important;
+}
+
+/* Hide all YouTube UI elements */
+.youtube-video-wrapper ::v-deep .ytp-chrome-top,
+.youtube-video-wrapper ::v-deep .ytp-show-cards-title,
+.youtube-video-wrapper ::v-deep .ytp-title,
+.youtube-video-wrapper ::v-deep .ytp-watermark,
+.youtube-video-wrapper ::v-deep .ytp-gradient-top,
+.youtube-video-wrapper ::v-deep .ytp-chrome-top-buttons,
+.youtube-video-wrapper ::v-deep .ytp-cards-teaser,
+.youtube-video-wrapper ::v-deep .ytp-pause-overlay {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+</style>
 
 <script setup>
 // Component logic can be added here

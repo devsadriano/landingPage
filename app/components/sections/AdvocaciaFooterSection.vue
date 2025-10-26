@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-advocacia-azul-escuro text-white py-16">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="w-full" style="padding-left: 12%; padding-right: 12%;">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Logo e Descrição -->
                 <div class="col-span-1 lg:col-span-2">

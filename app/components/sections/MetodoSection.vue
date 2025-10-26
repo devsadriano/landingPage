@@ -8,7 +8,8 @@
 
     <!-- Content -->
     <div ref="metodoSection"
-      class="relative z-10 container mx-auto px-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+      class="relative z-10 w-full opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+      style="padding-left: 12%; padding-right: 12%;"
       :class="{ 'opacity-100 translate-y-0': isVisible }">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

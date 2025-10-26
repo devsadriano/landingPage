@@ -1,6 +1,6 @@
 <template>
     <section id="servicos" class="py-20 bg-advocacia-cinza-claro">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="w-full" style="padding-left: 12%; padding-right: 12%;">
             <!-- Section Header -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold text-advocacia-azul-principal mb-6">
