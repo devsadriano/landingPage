@@ -15,10 +15,7 @@
         <!-- Depoimentos de Clientes -->
         <DepoimentosClientesSection />
 
-        <!-- Contato -->
-        <ContatoSection />
-
-        <!-- Footer -->
+        <!-- Footer com Contato e Newsletter -->
         <AdvocaciaFooterSection />
 
         <!-- WhatsApp Button -->
@@ -33,9 +30,18 @@ import ServicosJuridicosSection from '~/components/sections/ServicosJuridicosSec
 import SobreAdvogadoSection from '~/components/sections/SobreAdvogadoSection.vue'
 import AreasAtuacaoSection from '~/components/sections/AreasAtuacaoSection.vue'
 import DepoimentosClientesSection from '~/components/sections/DepoimentosClientesSection.vue'
-import ContatoSection from '~/components/sections/ContatoSection.vue'
 import AdvocaciaFooterSection from '~/components/sections/AdvocaciaFooterSection.vue'
 import AdvocaciaWhatsAppButton from '~/components/ui/AdvocaciaWhatsAppButton.vue'
+
+// Força a página a ficar no topo ao carregar
+onMounted(() => {
+  // Remove qualquer hash da URL ao carregar a página
+  if (window.location.hash) {
+    window.history.replaceState('', '', window.location.pathname + window.location.search);
+  }
+  // Força scroll para o topo
+  window.scrollTo(0, 0);
+});
 
 // Configurações da página
 useHead({

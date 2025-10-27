@@ -5,7 +5,8 @@
             href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta jurídica."
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+            class="text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+            style="background-color: #364d40;"
         >
             <!-- WhatsApp Icon -->
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">

@@ -8,9 +8,10 @@
                     <div class="w-full flex items-center justify-between py-2" style="padding-left: 12%; padding-right: 12%;">
                         <!-- Links Left/Center -->
                         <nav class="hidden md:flex space-x-6">
-                            <a href="#advlabs" class="text-gray-600 hover:text-primary font-medium text-sm">AdvLabs</a>
-                            <a href="#comunidade" class="text-gray-600 hover:text-primary font-medium text-sm">Comunidade Ambiental</a>
-                            <a href="#dae2025" class="text-gray-600 hover:text-primary font-medium text-sm">DAE 2025</a>
+                            <a href="#sobre" class="text-gray-600 hover:text-primary font-medium text-sm">ESCRITÓRIO</a>
+                            <a href="#advogados" class="text-gray-600 hover:text-primary font-medium text-sm">ADVOGADOS</a>
+                            <a href="#atuacao" class="text-gray-600 hover:text-primary font-medium text-sm">ATUAÇÃO</a>
+                            <NuxtLink to="/informes" class="text-gray-600 hover:text-primary font-medium text-sm">INFORMES</NuxtLink>
                         </nav>
                         <!-- Social & Contato Right -->
                         <div class="flex items-center space-x-3">
@@ -24,7 +25,7 @@
                             <!-- Email -->
                             <span class="text-gray-400 text-xs">contato@advambiental.com.br</span>
                             <!-- WhatsApp Button -->
-                            <a href="https://wa.me/554832118486" target="_blank" class="bg-green-400 hover:bg-green-500 text-white font-semibold px-4 py-1 rounded-full text-xs transition-colors">
+                            <a href="https://wa.me/554832118486" target="_blank" class="text-white font-semibold px-4 py-1 rounded-full text-xs transition-colors" style="background-color: #364d40;">
                                 FALE COM A GENTE
                             </a>
                         </div>
@@ -69,15 +70,6 @@
                     <img src="/images/logoEstendida.jpg" alt="Farenzena Franco Advogados Associados" class="h-32 w-full max-w-xl">
                 </div>
                 
-                <!-- Menu de links abaixo da logo (Área 2) -->
-                <nav class="flex flex-wrap gap-6 mb-16">
-                    <a href="#escritorio" class="font-semibold text-base transition-colors menu-link">ESCRITÓRIO</a>
-                    <a href="#advogados" class="font-semibold text-base transition-colors menu-link">ADVOGADOS</a>
-                    <a href="#atuacao" class="font-medium text-base transition-colors menu-link">ATUAÇÃO</a>
-                    <a href="#informes" class="font-medium text-base transition-colors menu-link">INFORMES</a>
-                    <a href="#faleconosco" class="font-medium text-base transition-colors menu-link">FALE CONOSCO</a>
-                </nav>
-                
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-40">
                     <!-- Left Content - Texto principal com espaçamento -->
                     <div style="color: #47524d;">
@@ -119,27 +111,36 @@
     color: #95744f;
 }
 .menu-link:hover {
-    color: #000;
-}
-.youtube-video-wrapper iframe {
-    pointer-events: none !important;
-}
-
-/* Hide all YouTube UI elements */
-.youtube-video-wrapper ::v-deep .ytp-chrome-top,
-.youtube-video-wrapper ::v-deep .ytp-show-cards-title,
-.youtube-video-wrapper ::v-deep .ytp-title,
-.youtube-video-wrapper ::v-deep .ytp-watermark,
-.youtube-video-wrapper ::v-deep .ytp-gradient-top,
-.youtube-video-wrapper ::v-deep .ytp-chrome-top-buttons,
-.youtube-video-wrapper ::v-deep .ytp-cards-teaser,
-.youtube-video-wrapper ::v-deep .ytp-pause-overlay {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
+    color: #364d40;
 }
 </style>
 
 <script setup>
-// Component logic can be added here
+// Função para rolagem suave controlada
+onMounted(() => {
+  // Adiciona listeners apenas para links de hash desta página
+  const hashLinks = document.querySelectorAll('a[href^="#"]');
+  
+  hashLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        // Ativa rolagem suave temporariamente
+        document.documentElement.classList.add('smooth-scroll');
+        
+        // Rola para o elemento
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Remove a classe após a rolagem
+        setTimeout(() => {
+          document.documentElement.classList.remove('smooth-scroll');
+        }, 1000);
+      }
+    });
+  });
+});
 </script>
