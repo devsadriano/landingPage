@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
-            <img src="/images/logoEstendida.jpg" alt="Farenzena Franco Advogados" class="h-12">
+            <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados" class="h-48">
           </div>
           <nav class="hidden md:flex space-x-8">
             <NuxtLink to="/#sobre" class="text-gray-600 hover:text-green-700 font-medium">ESCRITÓRIO</NuxtLink>
@@ -13,7 +13,7 @@
             <NuxtLink to="/#atuacao" class="text-gray-600 hover:text-green-700 font-medium">ATUAÇÃO</NuxtLink>
             <NuxtLink to="/informes" class="text-green-700 font-semibold border-b-2 border-green-700">INFORMES</NuxtLink>
           </nav>
-          <a href="https://wa.me/554832118486" target="_blank" class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors">
+          <a href="https://wa.me/556733411608" target="_blank" class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors">
             FALE CONOSCO
           </a>
         </div>
@@ -84,18 +84,6 @@
                 <p class="text-sm text-gray-500">15 de Outubro, 2025</p>
               </article>
             </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="bg-green-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-4">Newsletter Jurídica</h3>
-            <p class="text-gray-600 mb-4">Receba semanalmente as principais atualizações do direito agrário e ambiental.</p>
-            <form class="space-y-3">
-              <input type="email" placeholder="Seu e-mail" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
-              <button type="submit" class="w-full bg-green-700 text-white py-2 rounded-md hover:bg-green-800 transition-colors">
-                Inscrever-se
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -239,27 +227,39 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/images/logoEstendida.jpg" alt="Farenzena Franco Advogados" class="h-12 mb-4">
+            <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados" class="h-12 mb-4">
             <p class="text-gray-400 text-sm">
-              Escritório especializado em direito agrário e ambiental, 
-              oferecendo soluções jurídicas para o agronegócio.
+              O C&M Advogados é uma referência de escritório de advocacia e consultoria jurídica especializada, 
+              no verdadeiro estilo boutique, formado por uma equipe de Advogados entrosados, com sólida 
+              formação e experiência comprovada.
             </p>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">Áreas de Atuação</h4>
-            <ul class="space-y-2 text-sm text-gray-400">
-              <li>Direito Agrário</li>
-              <li>Direito Ambiental</li>
-              <li>Licenciamento</li>
-              <li>Regularização Fundiária</li>
-            </ul>
+            <h4 class="font-semibold mb-4">Horário de atendimento</h4>
+            <div class="space-y-2 text-sm text-gray-400">
+              <p class="font-medium">Segunda a sexta</p>
+              <p>08 às 11:30 - 13 às 17h</p>
+            </div>
           </div>
           <div>
             <h4 class="font-semibold mb-4">Contato</h4>
             <div class="space-y-2 text-sm text-gray-400">
-              <p>(48) 3211-8486</p>
-              <p>contato@advambiental.com.br</p>
-              <p>Florianópolis - SC</p>
+              <div>
+                <p class="font-medium">Endereço</p>
+                <p>R. Paraíba, 189 - Jardim dos Estados, Campo Grande - MS, 79020-050</p>
+              </div>
+              <div>
+                <p class="font-medium">Tel:</p>
+                <p>(67) 3341-1608</p>
+              </div>
+              <div>
+                <p class="font-medium">Email:</p>
+                <p>contato@advocaciacm.adv.br</p>
+              </div>
+              <div>
+                <p class="font-medium">Whatsapp</p>
+                <p>6799999999</p>
+              </div>
             </div>
           </div>
           <div>
@@ -272,7 +272,7 @@
           </div>
         </div>
         <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2025 Farenzena Franco Advogados Associados. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Caobianco & Magalhães Advogados Associados. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
@@ -282,10 +282,10 @@
 <script setup>
 // Meta tags for SEO
 useHead({
-  title: 'Informes Jurídicos - Farenzena Franco Advogados',
+  title: 'Informes Jurídicos - Caobianco & Magalhães Advogados',
   meta: [
     { name: 'description', content: 'Mantenha-se atualizado com as últimas notícias e mudanças legislativas do agronegócio e direito ambiental.' },
-    { name: 'keywords', content: 'direito agrário, direito ambiental, agronegócio, legislação, notícias jurídicas' }
+    { name: 'keywords', content: 'direito agrário, direito ambiental, agronegócio, legislação, notícias jurídicas, Caobianco Magalhães' }
   ]
 })
 </script>

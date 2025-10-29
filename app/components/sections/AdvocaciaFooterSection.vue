@@ -52,12 +52,14 @@
                 <!-- Logo e Info Principal -->
                 <div class="md:col-span-1">
                     <div class="mb-4">
-                        <img src="/images/logoEstendida.jpg" alt="Farenzena Franco Advogados Associados" class="h-12 w-auto mb-3">
+                        <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados Associados" class="h-12 w-auto mb-3">
                     </div>
-                    <h3 class="text-base font-bold mb-2">Farenzena & Franco Advogados Associados</h3>
-                    <p class="text-xs text-gray-300 mb-2">OAB 41054 | 33570.0314/0001-54</p>
-                    <p class="text-xs text-gray-300 mb-2">(48) 3211-8486 | (66) 9.9955-5402</p>
-                    <p class="text-xs text-gray-300 mb-3">contato@advambiental.com.br</p>
+                    <h3 class="text-base font-bold mb-2">Caobianco & Magalhães</h3>
+                    <p class="text-xs text-gray-300 mb-2">Advogados Associados</p>
+                    <p class="text-xs text-gray-300 mb-2">(67) 3341-1608 | 6799999999</p>
+                    <p class="text-xs text-gray-300 mb-3">contato@advocaciacm.adv.br</p>
+                    <p class="text-xs text-gray-300 mb-3">R. Paraíba, 189 - Jardim dos Estados, Campo Grande - MS, 79020-050</p>
+                    <p class="text-xs text-gray-300 mb-3">Segunda a sexta: 08h às 11:30 - 13h às 17h</p>
                 </div>
                 
                 <!-- Redes Sociais -->
@@ -95,7 +97,7 @@
             <div class="border-t border-gray-600 pt-4">
                 <div class="flex flex-col md:flex-row justify-between items-center text-xs">
                     <p class="text-gray-400 mb-2 md:mb-0">
-                        © 2025 Farenzena & Franco Advogados Associados. Todos os direitos reservados.
+                        © 2025 Caobianco & Magalhães Advogados Associados. Todos os direitos reservados.
                     </p>
                     <div class="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
                         <div class="flex space-x-4">

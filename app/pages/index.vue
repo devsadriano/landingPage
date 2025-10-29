@@ -9,9 +9,6 @@
         <!-- Sobre o Advogado -->
         <SobreAdvogadoSection />
 
-        <!-- Áreas de Atuação -->
-        <AreasAtuacaoSection />
-
         <!-- Depoimentos de Clientes -->
         <DepoimentosClientesSection />
 
@@ -28,7 +25,6 @@
 import AdvocaciaHeroSection from '~/components/sections/AdvocaciaHeroSection.vue'
 import ServicosJuridicosSection from '~/components/sections/ServicosJuridicosSection.vue'
 import SobreAdvogadoSection from '~/components/sections/SobreAdvogadoSection.vue'
-import AreasAtuacaoSection from '~/components/sections/AreasAtuacaoSection.vue'
 import DepoimentosClientesSection from '~/components/sections/DepoimentosClientesSection.vue'
 import AdvocaciaFooterSection from '~/components/sections/AdvocaciaFooterSection.vue'
 import AdvocaciaWhatsAppButton from '~/components/ui/AdvocaciaWhatsAppButton.vue'
