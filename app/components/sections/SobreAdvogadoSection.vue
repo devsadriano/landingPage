@@ -57,40 +57,75 @@
 
                 <!-- Right Content -->
                 <div class="relative">
-                    <div class="bg-gradient-to-br from-advocacia-azul-principal to-advocacia-azul-claro rounded-2xl p-8 text-white">
-                        <div class="aspect-square bg-white rounded-xl overflow-hidden mb-6">
-                            <!-- Logo do escritório - coloque o arquivo logo.jpg na pasta public/images/ -->
-                            <img 
-                                src="/images/predio.jpg" 
-                                alt="Caobianco & Magalhães Logo" 
-                                class="w-full h-full object-cover"
-                                onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')"
-                            />
-                            <!-- Fallback SVG caso a imagem não seja encontrada -->
-                            <div class="hidden w-full h-full flex items-center justify-center">
-                                <svg class="w-24 h-24 text-advocacia-azul-principal" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                                </svg>
+                    <div class="bg-[#344b3e] rounded-2xl p-8 text-white">
+                        <div class="aspect-square bg-[#344b3e] rounded-xl overflow-hidden mb-6 flex items-center justify-center">
+                            <transition name="fade" mode="out-in">
+                                <img
+                                    :key="slides[currentSlide].image"
+                                    :src="slides[currentSlide].image"
+                                    :alt="slides[currentSlide].alt"
+                                    :class="['max-h-full max-w-full', slides[currentSlide].type === 'escritorio' ? 'w-full h-full object-cover' : 'object-contain']"
+                                />
+                            </transition>
+                        </div>
+
+                        <div v-if="slides[currentSlide].type === 'escritorio'">
+                            <blockquote class="text-lg italic mb-6">
+                                {{ slides[currentSlide].quote }}
+                            </blockquote>
+
+                            <div class="border-t border-white border-opacity-30 pt-6">
+                                <div class="grid grid-cols-2 gap-6">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-advocacia-dourado-principal mb-1">500+</div>
+                                        <div class="text-sm">Casos Resolvidos</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-advocacia-dourado-principal mb-1">98%</div>
+                                        <div class="text-sm">Taxa de Sucesso</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <blockquote class="text-lg italic mb-6">
-                            "Nossa missão é garantir que cada cliente receba não apenas 
-                            excelência técnica, mas também um atendimento humanizado 
-                            e personalizado, com soluções jurídicas eficazes."
-                        </blockquote>
-                        
-                        <div class="border-t border-white border-opacity-30 pt-6">
-                            <div class="grid grid-cols-2 gap-6">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-advocacia-dourado-principal mb-1">500+</div>
-                                    <div class="text-sm">Casos Resolvidos</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-advocacia-dourado-principal mb-1">98%</div>
-                                    <div class="text-sm">Taxa de Sucesso</div>
-                                </div>
+
+                        <div v-else class="text-center">
+                            <h3 class="text-2xl font-semibold mb-2">{{ slides[currentSlide].name }}</h3>
+                            <p class="text-advocacia-dourado-principal text-sm uppercase tracking-wide">{{ slides[currentSlide].role }}</p>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="flex items-center justify-between mt-6">
+                            <button
+                                type="button"
+                                @click="prevSlide"
+                                class="w-10 h-10 flex items-center justify-center rounded-full border border-white/30 bg-white/5 hover:bg-white/15 transition"
+                                aria-label="Slide anterior"
+                            >
+                                <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <div class="flex space-x-2">
+                                <button
+                                    v-for="(slide, index) in slides"
+                                    :key="slide.id"
+                                    type="button"
+                                    @click="goToSlide(index)"
+                                    class="w-2.5 h-2.5 rounded-full transition"
+                                    :class="index === currentSlide ? 'bg-advocacia-dourado-principal' : 'bg-white/30'"
+                                    :aria-label="`Ir para slide ${index + 1}`"
+                                />
                             </div>
+                            <button
+                                type="button"
+                                @click="nextSlide"
+                                class="w-10 h-10 flex items-center justify-center rounded-full border border-white/30 bg-white/5 hover:bg-white/15 transition"
+                                aria-label="Próximo slide"
+                            >
+                                <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -100,5 +135,91 @@
 </template>
 
 <script setup>
-// Component logic
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const slides = [
+    {
+        id: 'escritorio',
+        type: 'escritorio',
+        image: '/images/predio.jpg',
+        alt: 'Fachada do escritório',
+        quote: '"Nossa missão é garantir que cada cliente receba não apenas excelência técnica, mas também um atendimento humanizado e personalizado, com soluções jurídicas eficazes."'
+    },
+    {
+        id: 'paulo',
+        type: 'socio',
+        image: '/images/PAULO-4.jpg',
+        alt: 'Sócio Paulo Caobianco',
+        name: 'Paulo Caobianco',
+        role: 'Advogado'
+    },
+    {
+        id: 'danilo',
+        type: 'socio',
+        image: '/images/Danilo.jpg',
+        alt: 'Sócio Danilo Magalhães',
+        name: 'Danilo Magalhães',
+        role: 'Advogado'
+    }
+]
+
+const currentSlide = ref(0)
+const AUTOPLAY_DELAY = 5000
+let autoPlayTimer = null
+
+const moveToSlide = (index) => {
+    const normalizedIndex = (index + slides.length) % slides.length
+    currentSlide.value = normalizedIndex
+}
+
+const startAutoPlay = () => {
+    if (autoPlayTimer) {
+        clearInterval(autoPlayTimer)
+    }
+
+    if (typeof window === 'undefined') {
+        return
+    }
+
+    autoPlayTimer = window.setInterval(() => {
+        moveToSlide(currentSlide.value + 1)
+    }, AUTOPLAY_DELAY)
+}
+
+const nextSlide = () => {
+    moveToSlide(currentSlide.value + 1)
+    startAutoPlay()
+}
+
+const prevSlide = () => {
+    moveToSlide(currentSlide.value - 1)
+    startAutoPlay()
+}
+
+const goToSlide = (index) => {
+    moveToSlide(index)
+    startAutoPlay()
+}
+
+onMounted(() => {
+    startAutoPlay()
+})
+
+onBeforeUnmount(() => {
+    if (autoPlayTimer) {
+        clearInterval(autoPlayTimer)
+    }
+})
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+</style>
