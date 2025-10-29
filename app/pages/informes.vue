@@ -9,8 +9,9 @@
           </div>
           <nav class="hidden md:flex space-x-8">
             <NuxtLink to="/#sobre" class="text-gray-600 hover:text-green-700 font-medium">ESCRITÓRIO</NuxtLink>
+            <NuxtLink to="/#sobre" class="text-gray-600 hover:text-green-700 font-medium">SOBRE</NuxtLink>
             <NuxtLink to="/#advogados" class="text-gray-600 hover:text-green-700 font-medium">ADVOGADOS</NuxtLink>
-            <NuxtLink to="/#atuacao" class="text-gray-600 hover:text-green-700 font-medium">ATUAÇÃO</NuxtLink>
+            <NuxtLink to="/#servicos" class="text-gray-600 hover:text-green-700 font-medium">ATUAÇÃO</NuxtLink>
             <NuxtLink to="/informes" class="text-green-700 font-semibold border-b-2 border-green-700">INFORMES</NuxtLink>
           </nav>
           <a href="https://wa.me/556733411608" target="_blank" class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors">

@@ -9,8 +9,9 @@
                         <!-- Links Left/Center -->
                         <nav class="hidden md:flex space-x-6">
                             <a href="#sobre" class="text-gray-600 hover:text-primary font-medium text-sm">ESCRITÓRIO</a>
+                            <a href="#sobre" class="text-gray-600 hover:text-primary font-medium text-sm">SOBRE</a>
                             <a href="#advogados" class="text-gray-600 hover:text-primary font-medium text-sm">ADVOGADOS</a>
-                            <a href="#atuacao" class="text-gray-600 hover:text-primary font-medium text-sm">ATUAÇÃO</a>
+                            <a href="#servicos" class="text-gray-600 hover:text-primary font-medium text-sm">ATUAÇÃO</a>
                             <NuxtLink to="/informes" class="text-gray-600 hover:text-primary font-medium text-sm">INFORMES</NuxtLink>
                         </nav>
                         <!-- Social & Contato Right -->
@@ -95,12 +96,6 @@
         <!-- Bottom Divider -->
         <div class="absolute bottom-0 left-0 w-full h-3" style="background-color: #95744f;"></div>
 
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-        </div>
     </section>
 </template>
 
