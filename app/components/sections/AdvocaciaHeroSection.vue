@@ -92,6 +92,9 @@
             </div>
         </div>
         
+        <!-- Bottom Divider -->
+        <div class="absolute bottom-0 left-0 w-full h-3" style="background-color: #95744f;"></div>
+
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
