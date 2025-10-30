@@ -87,7 +87,6 @@
                     <div class="space-y-1 text-xs">
                         <p><a href="#sobre" class="text-gray-300 hover:text-white">ESCRITÓRIO</a></p>
                         <p><a href="#sobre" class="text-gray-300 hover:text-white">SOBRE</a></p>
-                        <p><a href="#advogados" class="text-gray-300 hover:text-white">ADVOGADOS</a></p>
                         <p><a href="#servicos" class="text-gray-300 hover:text-white">ATUAÇÃO</a></p>
                         <p><NuxtLink to="/informes" class="text-gray-300 hover:text-white">INFORMES</NuxtLink></p>
                     </div>

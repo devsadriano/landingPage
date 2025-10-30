@@ -10,7 +10,6 @@
                         <nav class="hidden md:flex space-x-6">
                             <a href="#sobre" class="text-gray-600 hover:text-primary font-medium text-sm">ESCRITÓRIO</a>
                             <a href="#sobre" class="text-gray-600 hover:text-primary font-medium text-sm">SOBRE</a>
-                            <a href="#advogados" class="text-gray-600 hover:text-primary font-medium text-sm">ADVOGADOS</a>
                             <a href="#servicos" class="text-gray-600 hover:text-primary font-medium text-sm">ATUAÇÃO</a>
                             <NuxtLink to="/informes" class="text-gray-600 hover:text-primary font-medium text-sm">INFORMES</NuxtLink>
                         </nav>
