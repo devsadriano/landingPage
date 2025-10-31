@@ -1,9 +1,9 @@
 <template>
     <section id="sobre" class="py-20 bg-white">
         <div class="w-full" style="padding-left: 12%; padding-right: 12%;">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <!-- Left Content -->
-                <div>
+                <div class="flex flex-col justify-center h-full">
                     <h2 class="text-4xl lg:text-5xl font-bold text-advocacia-azul-principal mb-6">
                         Sobre Caobianco & Magalhães
                     </h2>
@@ -56,21 +56,21 @@
                 </div>
 
                 <!-- Right Content -->
-                <div class="relative h-full">
-                    <div class="bg-[#344b3e] rounded-2xl p-8 text-white flex flex-col" style="height: 750px; width: 100%;">
-                        <div class="w-full flex items-center justify-center mb-6" style="height: 400px;">
+                <div class="relative" style="height: 750px;">
+                    <div class="bg-[#344b3e] rounded-2xl p-8 text-white flex flex-col" style="height: 100%; width: 100%; max-height: 750px; min-height: 750px;">
+                        <div class="w-full flex items-center justify-center mb-6" style="height: 500px; flex-shrink: 0;">
                             <transition name="fade" mode="out-in">
                                 <img
                                     :key="slides[currentSlide].image"
                                     :src="slides[currentSlide].image"
                                     :alt="slides[currentSlide].alt"
-                                    :class="['max-h-full max-w-full', slides[currentSlide].type === 'escritorio' ? 'w-full h-full object-cover rounded-xl' : 'max-w-full object-contain']"
+                                    :class="['max-h-full max-w-full', slides[currentSlide].type === 'escritorio' ? 'w-full h-full object-cover rounded-xl' : 'h-full object-contain']"
                                     style="border-radius: 12px;"
                                 />
                             </transition>
                         </div>
 
-                        <div v-if="slides[currentSlide].type === 'escritorio'" class="flex flex-col" style="height: 280px; overflow: hidden;">
+                        <div v-if="slides[currentSlide].type === 'escritorio'" class="flex flex-col" style="height: 180px; overflow: hidden;">
                             <blockquote class="text-lg italic mb-6" style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex-shrink: 0;">
                                 {{ slides[currentSlide].quote }}
                             </blockquote>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
 
-                        <div v-else class="text-center flex flex-col items-center justify-center" style="height: 280px; padding-top: 40px;">
+                        <div v-else class="text-center flex flex-col items-center justify-center" style="height: 180px; padding-top: 20px;">
                             <h3 class="text-3xl font-semibold mb-2">{{ slides[currentSlide].name }}</h3>
                             <p class="text-advocacia-dourado-principal text-base uppercase tracking-wide font-medium">{{ slides[currentSlide].role }}</p>
                         </div>
