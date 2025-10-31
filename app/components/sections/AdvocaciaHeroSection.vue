@@ -75,13 +75,16 @@
                     <div style="color: #47524d;">
                         <!-- Texto principal -->
                         <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6" style="color: #47524d;">
-                            "Não vendemos resultado. Vendemos Técnica. <span style="color: #95744f;">E nossa Técnica geralmente dá Resultado.</span>"
+                            "Na <span style="color: #95744f;">Caobianco & Magalhães</span>, não vendemos promessas. Entregamos Técnica - e ela gera Resultado."
                         </h1>
                         
                         <!-- Descriptive Text -->
-                        <p class="text-sm leading-relaxed" style="color: #47524d;">
-                            O Escritório <span class="font-semibold" style="color: #95744f;">Farenzena Franco Advogados Associados</span> defende pessoas físicas e jurídicas através de defesas administrativas e judiciais elaboradas a partir da perfeição e excelência, com refinamento, elegância e identidade jurídica, na busca incessante pela resultado, cujo objetivo final é a satisfação do cliente.
+                        <p class="text-2sm leading-relaxed" style="color: #47524d;">
+                            Defendemos pessoas e empresas com <span class="font-semibold" style="color: #95744f;">técnica refinada, estratégia e elegância.</span> Cada caso é tratado com excelência para transformar técnica em resultado.
                         </p>
+                        <p class="text-1sm leading-relaxed" style="color: transparent;">Texto transparente</p>
+                        <p class="text-1sm leading-relaxed" style="color: transparent;">Texto transparente</p>
+
                     </div>
                     
                     <!-- Right Content - Vazio para mostrar o vídeo -->

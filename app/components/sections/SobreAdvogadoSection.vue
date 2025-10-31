@@ -56,25 +56,26 @@
                 </div>
 
                 <!-- Right Content -->
-                <div class="relative">
-                    <div class="bg-[#344b3e] rounded-2xl p-8 text-white">
-                        <div class="aspect-square bg-[#344b3e] rounded-xl overflow-hidden mb-6 flex items-center justify-center">
+                <div class="relative h-full">
+                    <div class="bg-[#344b3e] rounded-2xl p-8 text-white flex flex-col" style="height: 750px; width: 100%;">
+                        <div class="w-full flex items-center justify-center mb-6" style="height: 400px;">
                             <transition name="fade" mode="out-in">
                                 <img
                                     :key="slides[currentSlide].image"
                                     :src="slides[currentSlide].image"
                                     :alt="slides[currentSlide].alt"
-                                    :class="['max-h-full max-w-full', slides[currentSlide].type === 'escritorio' ? 'w-full h-full object-cover' : 'object-contain']"
+                                    :class="['max-h-full max-w-full', slides[currentSlide].type === 'escritorio' ? 'w-full h-full object-cover rounded-xl' : 'max-w-full object-contain']"
+                                    style="border-radius: 12px;"
                                 />
                             </transition>
                         </div>
 
-                        <div v-if="slides[currentSlide].type === 'escritorio'">
-                            <blockquote class="text-lg italic mb-6">
+                        <div v-if="slides[currentSlide].type === 'escritorio'" class="flex flex-col" style="height: 280px; overflow: hidden;">
+                            <blockquote class="text-lg italic mb-6" style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex-shrink: 0;">
                                 {{ slides[currentSlide].quote }}
                             </blockquote>
 
-                            <div class="border-t border-white border-opacity-30 pt-6">
+                            <div class="border-t border-white border-opacity-30 pt-6 mt-auto flex-shrink-0">
                                 <div class="grid grid-cols-2 gap-6">
                                     <div class="text-center">
                                         <div class="text-2xl font-bold text-advocacia-dourado-principal mb-1">500+</div>
@@ -88,13 +89,13 @@
                             </div>
                         </div>
 
-                        <div v-else class="text-center">
-                            <h3 class="text-2xl font-semibold mb-2">{{ slides[currentSlide].name }}</h3>
-                            <p class="text-advocacia-dourado-principal text-sm uppercase tracking-wide">{{ slides[currentSlide].role }}</p>
+                        <div v-else class="text-center flex flex-col items-center justify-center" style="height: 280px; padding-top: 40px;">
+                            <h3 class="text-3xl font-semibold mb-2">{{ slides[currentSlide].name }}</h3>
+                            <p class="text-advocacia-dourado-principal text-base uppercase tracking-wide font-medium">{{ slides[currentSlide].role }}</p>
                         </div>
 
                         <!-- Controls -->
-                        <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center justify-between mt-auto pt-6" style="flex-shrink: 0; border-top: 1px solid rgba(255, 255, 255, 0.3);">
                             <button
                                 type="button"
                                 @click="prevSlide"

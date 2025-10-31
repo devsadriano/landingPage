@@ -3,9 +3,9 @@
     <!-- Header/Navigation -->
     <header class="bg-white shadow-sm border-b">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
+        <div class="flex justify-between items-center py-2">
           <div class="flex items-center">
-            <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados" class="h-48">
+            <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados" style="height: 180px; object-fit: contain;">
           </div>
           <nav class="hidden md:flex space-x-8">
             <NuxtLink to="/#sobre" class="text-gray-600 hover:text-green-700 font-medium">ESCRITÓRIO</NuxtLink>
@@ -35,7 +35,7 @@
     </section>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         <!-- Featured Article -->
@@ -226,9 +226,12 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       
+        
+        <!-- Info Grid -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/images/logoEstendida.png" alt="Caobianco & Magalhães Advogados" class="h-12 mb-4">
+            <h4 class="font-semibold mb-4">Sobre</h4>
             <p class="text-gray-400 text-sm">
               O C&M Advogados é uma referência de escritório de advocacia e consultoria jurídica especializada, 
               no verdadeiro estilo boutique, formado por uma equipe de Advogados entrosados, com sólida 
